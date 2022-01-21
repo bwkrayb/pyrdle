@@ -2,6 +2,9 @@ Welcome to my wordle clone!
 
 I wanted to write this because I was bored. Threw it together in a couple hours.
 
+To start a game, type python3 play.py.
+
+
 Welcome to pyrdle!
 To play:
 Guess a 5 letter word. If a character matches
