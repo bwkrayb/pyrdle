@@ -1,0 +1,19 @@
+Welcome to pyrdle!
+To play:
+    Guess a 5 letter word. If a character matches 
+in the exact spot, there will be an X under that c
+haracter. If character is in the random word, but 
+not in that particular spot, there will be an / un
+der that character. If the letter does not match a
+t all, there will be nothing.
+
+To quit, type quit for any guess.
+
+Enter your 5 letter word.
+-----
+Traceback (most recent call last):
+  File "/home/pi/clone-wordle/play.py", line 19, in <module>
+    guessStr = guessWord(randomStr)
+  File "/home/pi/clone-wordle/guess_word.py", line 3, in guessWord
+    guessedWord = input()
+EOFError: EOF when reading a line

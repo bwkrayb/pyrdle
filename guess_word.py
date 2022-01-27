@@ -1,10 +1,19 @@
+import enchant
+
+
 def guessWord(randomWord):
+    d = enchant.Dict("en_US")
     print('-----')
     guessedWord = input()
     if guessedWord == 'quit':
         print("The word was " + randomWord)
         resultString = "You lose."
         return resultString;
+    elif d.check(guessedWord) == False:
+        while d.check(guessedWord) == False:
+            print(guessedWord + " is not a real word")
+            print("-----")
+            guessedWord = input()
     else:
         while len(guessedWord) != 5:
             print("")
